@@ -8,7 +8,7 @@ class Cards extends Component {
       <section className="cards-section">
         <div className="container">
           <button className="btn btn-inv cards-btn" onClick={onCardCreate}>
-            Creare Card
+            Create Card
           </button>
           <div className="cards">
             {cards.map((card, idx) => {

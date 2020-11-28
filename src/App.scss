@@ -1,7 +1,3 @@
-.app {
-  background: rgba(orange, 0.1);
-}
-
 nav {
   background: orange;
   padding: 2.5rem;
@@ -10,6 +6,7 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 100;
   width: 100%;
   .links {
     display: flex;
@@ -26,7 +23,7 @@ nav {
       background: rgba(#fff, 0.2);
       border-radius: 5px;
       &:hover {
-          background: rgba(#fff, 0.4);
+        background: rgba(#fff, 0.4);
       }
     }
   }
@@ -228,5 +225,20 @@ footer {
     .cards {
       grid-template-columns: 1fr;
     }
+  }
+}
+
+.chart {
+  min-height: 100vh;
+  position: relative;
+
+  .chart-container {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 120rem;
   }
 }
