@@ -7,13 +7,13 @@ class Chart extends Component {
       labels: ['January', 'February', 'March', 'April', 'May'],
       datasets: [
         {
-          label: 'Rainfall',
+          label: 'Patients',
           fill: false,
           lineTension: 0.5,
           backgroundColor: 'rgb(255,255,255)',
           borderColor: 'rgb(255,165,0)',
           borderWidth: 2,
-          data: [65, 59, 80, 81, 56],
+          data: [15, 24, 33, 48, 59],
         },
       ],
     },
@@ -28,7 +28,7 @@ class Chart extends Component {
               options={{
                 title: {
                   display: true,
-                  text: 'Average Rainfall per month',
+                  text: 'Covid Patients Per Month in Millions',
                   fontSize: 20,
                 },
                 legend: {
