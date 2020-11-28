@@ -1,0 +1,226 @@
+.app {
+  background: rgba(orange, 0.1);
+}
+
+nav {
+  background: orange;
+  padding: 4rem;
+  border-bottom: 2px solid rgba(orange, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  padding: 2rem;
+  background: #fff;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-inv {
+  color: #fff;
+  background: orange;
+}
+
+.custom-input {
+  padding: 16rem 0 8rem 0;
+  min-height: 50vh;
+  .content {
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+    background: orange;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    .content-btn {
+      margin-bottom: 2rem;
+    }
+    .single-row {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      .row-ele {
+        padding: 2rem;
+        width: 46%;
+        border: none;
+        background: rgba(orange, 0.1);
+        border-radius: 0.5rem;
+        &:last-child {
+          width: 5%;
+          background: orange;
+          color: #fff;
+          font-weight: bold;
+          padding: 2rem 0;
+          cursor: pointer;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: orange;
+  font-weight: bold;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: orange;
+  font-weight: bold;
+  opacity: 1;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: orange;
+  font-weight: bold;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: orange;
+  font-weight: bold;
+}
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: orange;
+  font-weight: bold;
+}
+
+input::placeholder {
+  /* Most modern browsers support this now. */
+  color: orange;
+  font-weight: bold;
+}
+
+.cards-section {
+  //background: #fff;
+  padding: 0 0 8rem 0;
+  min-height: 50vh;
+  .cards-btn {
+    margin-bottom: 2rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    .card {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem 0;
+      .field {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .field-name {
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+          display: inline-block;
+          letter-spacing: 1px;
+          font-weight: bold;
+          color: grey;
+          background: rgba(orange, 0.1);
+          padding: 1rem 2rem;
+          border-radius: 5px;
+        }
+        .field-value {
+          background: rgba(orange, 0.1);
+          padding: 1rem 3rem;
+          border-radius: 5px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          letter-spacing: 1px;
+          font-weight: bold;
+          background: orange;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background: #fff;
+  padding: 4rem 0;
+  h4 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: grey;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .custom-input {
+    .content {
+      .single-row {
+        .row-ele {
+          width: 44%;
+          &:last-child {
+            width: 8%;
+          }
+        }
+      }
+    }
+  }
+  .cards-section {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .custom-input {
+    .content {
+      .single-row {
+        .row-ele {
+          width: 100%;
+          margin-bottom: 1rem;
+          &:last-child {
+            width: 30%;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .cards-section {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
