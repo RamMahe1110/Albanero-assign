@@ -4,13 +4,32 @@
 
 nav {
   background: orange;
-  padding: 4rem;
+  padding: 2.5rem;
   border-bottom: 2px solid rgba(orange, 0.1);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+  .links {
+    display: flex;
+    align-items: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem;
+      margin-right: 3rem;
+      background: rgba(#fff, 0.2);
+      border-radius: 5px;
+      &:hover {
+          background: rgba(#fff, 0.4);
+      }
+    }
+  }
 }
 
 button:focus,
@@ -42,7 +61,7 @@ input:focus {
 }
 
 .custom-input {
-  padding: calc(8rem + 95px) 0 8rem 0;
+  padding: calc(8rem + 98px) 0 8rem 0;
   min-height: 50vh;
   .content {
     padding: 2rem 2rem;
@@ -79,41 +98,34 @@ input:focus {
 }
 
 input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: orange;
   font-weight: bold;
 }
 input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: orange;
   font-weight: bold;
   opacity: 1;
 }
 input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: orange;
   font-weight: bold;
   opacity: 1;
 }
 input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: orange;
   font-weight: bold;
 }
 input::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: orange;
   font-weight: bold;
 }
 
 input::placeholder {
-  /* Most modern browsers support this now. */
   color: orange;
   font-weight: bold;
 }
 
 .cards-section {
-  //background: #fff;
   padding: 0 0 8rem 0;
   min-height: 50vh;
   .cards-btn {
